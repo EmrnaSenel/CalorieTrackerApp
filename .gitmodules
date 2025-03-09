@@ -1,0 +1,5 @@
+[submodule "CalorieTrackerApp"]
+    path = CalorieTrackerApp
+    url = git@github.com:EmrnaSenel/CalorieTrackerApp.git
+
+
