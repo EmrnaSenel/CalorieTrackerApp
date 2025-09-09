@@ -6,5 +6,9 @@
 	<array>
 		<string>remote-notification</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>We need camera access to scan food items</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need photo library access to select food images</string>
 </dict>
 </plist>

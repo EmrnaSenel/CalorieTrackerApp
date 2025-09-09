@@ -2,7 +2,7 @@
 //  CalorieTrackerApp.swift
 //  CalorieTracker
 //
-//  Created by Emrina Şenel on 19.03.2025.
+//  Created by Emrina Şenel.
 //
 
 import SwiftUI
@@ -10,23 +10,22 @@ import SwiftData
 
 @main
 struct CalorieTrackerApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
+    let modelContainer: ModelContainer
+    @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
+    
+    init() {
+        self.modelContainer = ModelConfig.modelContainer
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if hasCompletedOnboarding {
+                ContentView()
+                    .modelContainer(modelContainer)
+            } else {
+                OnboardingView()
+                    .modelContainer(modelContainer)
+            }
         }
-        .modelContainer(sharedModelContainer)
     }
 }
