@@ -158,10 +158,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Apple for SwiftUI and SwiftData frameworks
 
 ## Screenshots 📸
-<img width="1024" height="1536" alt="icon" src="https://github.com/user-attachments/assets/63c31896-676f-43d9-b92b-02aae6ce4c29" />
-![app3](https://github.com/user-attachments/assets/20bc7320-d502-4fd5-9f0d-2609e3d9a88e)
-![app2](https://github.com/user-attachments/assets/3482124c-8f09-4c77-a77e-ca47bae6cebe)
-![app1](https://github.com/user-attachments/assets/31937d4d-7f09-48dd-946d-d182d3366ce9)
+
+<img width="500" height="750" alt="icon" src="https://github.com/user-attachments/assets/9034725e-7558-4074-9a08-b9d702e86019" />
 
 
 
